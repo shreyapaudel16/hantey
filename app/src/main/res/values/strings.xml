@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hantey</string>
+    <string name="next">NEXT</string>
+    <string name="nextt">Next</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alata</item>
+        <item>@font/allan</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/electrolize</item>
+        <item>@font/julius_sans_one</item>
+    </array>
+</resources>
