@@ -1,9 +1,11 @@
 package adapter
 
+import android.content.Intent
 import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.hantey.DetailsActivity
 import com.example.hantey.databinding.FragmentHomeBinding
 import com.example.hantey.databinding.PopularItemBinding
 
@@ -21,6 +23,13 @@ class Popularadapter(private val items:List<String>,private val price:List<Strin
         val price = price[position]
         holder.bind(item,price,images)
 
+        holder.itemView.setOnClickListener{
+            val intent= Intent(requireContext, DetailsActivity::class.java)
+            intent.putExtra("MenuItemName",menuItemsName.get(position))
+            intent.putExtra("MenuItemImage",menuImage.get(position))
+            requireContext.startActivity(intent)
+        }
+
     }
 
     override fun getItemCount(): Int {
@@ -28,10 +37,10 @@ class Popularadapter(private val items:List<String>,private val price:List<Strin
 
     }
     class PopularViewHolder (private val binding: PopularItemBinding) : RecyclerView.ViewHolder(binding.root){
-      private val imagesview=binding.imageView11
+      private val imagesview=binding.imageView2
         fun bind(item: String,price:String, images: Int) {
-            binding.Foodnamepopular.text = item
-            binding.Pricepopular.text =price
+            binding.menufoodname.text = item
+            binding.pricepopular.text =price
             imagesview.setImageResource(images)
         }
 

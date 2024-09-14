@@ -38,7 +38,7 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
             R.drawable.cappuchino,
             R.drawable.pasta
         )
-        val adapter = MenuAdapter(ArrayList(menufoodname),ArrayList(menuitemprice),ArrayList(menuimage))
+        val adapter = MenuAdapter(ArrayList(menufoodname),ArrayList(menuitemprice),ArrayList(menuimage),requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
         return binding.root

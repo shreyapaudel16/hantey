@@ -7,36 +7,39 @@
     tools:context=".Fragment.CartFragment">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
         android:text="Cart"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cartRecyclerView"
-        android:layout_width="409dp"
-        android:layout_height="869dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="148dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="716dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/cartRecyclerView"
+        android:id="@+id/cartRecyclerview"
+        android:layout_width="411dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toTopOf="@+id/proceedbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceedbutton"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/proceedbuttonshape"
+        android:fontFamily="@font/poppins"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
