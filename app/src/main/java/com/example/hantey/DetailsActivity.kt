@@ -19,6 +19,9 @@ class DetailsActivity : AppCompatActivity() {
         binding.detailfoodname.text=foodName
         binding.detailfoodimage.setImageResource(foodImage)
 
+        binding.backarrowbutton.setOnClickListener{
+            finish()
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

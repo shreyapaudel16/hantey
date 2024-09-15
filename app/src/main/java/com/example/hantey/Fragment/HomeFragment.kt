@@ -40,7 +40,7 @@ import com.example.hantey.databinding.FragmentHomeBinding
         val foodname = listOf("Salad", "Burger","momo","Item")
         val price = listOf("Rs 250", "Rs 200","Rs 190","Rs 350")
         val popularfoodimages =listOf(R.drawable.breakfast,R.drawable.burger,R.drawable.chicken,R.drawable.combo)
-        val adapter = Popularadapter(foodname, price, popularfoodimages)
+        val adapter = Popularadapter(foodname, price, popularfoodimages,requireContext())
         binding.popularrecyclerview.layoutManager = LinearLayoutManager(requireContext())
         binding.popularrecyclerview.adapter = adapter
     }

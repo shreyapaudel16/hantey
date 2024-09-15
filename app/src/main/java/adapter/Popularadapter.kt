@@ -1,5 +1,6 @@
 package adapter
 
+import android.content.Context
 import android.content.Intent
 import android.media.Image
 import android.view.LayoutInflater
@@ -9,7 +10,7 @@ import com.example.hantey.DetailsActivity
 import com.example.hantey.databinding.FragmentHomeBinding
 import com.example.hantey.databinding.PopularItemBinding
 
-class Popularadapter(private val items:List<String>,private val price:List<String>, private val image:List<Int>) : RecyclerView.Adapter<Popularadapter.PopularViewHolder>() {
+class Popularadapter(private val items:List<String>,private val price:List<String>, private val image:List<Int>,private val requireContext:Context) : RecyclerView.Adapter<Popularadapter.PopularViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
@@ -25,8 +26,8 @@ class Popularadapter(private val items:List<String>,private val price:List<Strin
 
         holder.itemView.setOnClickListener{
             val intent= Intent(requireContext, DetailsActivity::class.java)
-            intent.putExtra("MenuItemName",menuItemsName.get(position))
-            intent.putExtra("MenuItemImage",menuImage.get(position))
+            intent.putExtra("MenuItemName",item)
+            intent.putExtra("MenuItemImage",images)
             requireContext.startActivity(intent)
         }
 
