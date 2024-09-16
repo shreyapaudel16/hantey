@@ -1,6 +1,6 @@
 package com.example.hantey.Fragment
 
-import adapter.MenuAdapter
+import com.example.hantey.adapter.MenuAdapter
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment

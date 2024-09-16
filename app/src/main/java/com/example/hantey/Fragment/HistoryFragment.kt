@@ -1,6 +1,6 @@
 package com.example.hantey.Fragment
 
-import adapter.BuyAgainAdapter
+import com.example.hantey.adapter.BuyAgainAdapter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,7 +29,7 @@ class HistoryFragment : Fragment() {
         val buyAgainFoodName= arrayListOf("Food1","Food 2","Food 3","Food 4","Food 5")
         val buyAgainFoodPrice= arrayListOf("Rs 250","Rs 350","Rs 200","Rs 270","Rs 310")
         val buyAgainFoodImage= arrayListOf(R.drawable.chowmein,R.drawable.pasta,R.drawable.combo,R.drawable.breakfast,R.drawable.sandwich)
-        buyAgainAdapter =BuyAgainAdapter(buyAgainFoodName,buyAgainFoodPrice,buyAgainFoodImage)
+        buyAgainAdapter = BuyAgainAdapter(buyAgainFoodName,buyAgainFoodPrice,buyAgainFoodImage)
         binding.buyAgainRecyclerView.layoutManager=LinearLayoutManager(requireContext())
     }
 

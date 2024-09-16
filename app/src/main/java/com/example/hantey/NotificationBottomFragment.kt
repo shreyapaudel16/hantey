@@ -1,6 +1,6 @@
 package com.example.hantey
 
-import adapter.NotificationAdapter
+import com.example.hantey.adapter.NotificationAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

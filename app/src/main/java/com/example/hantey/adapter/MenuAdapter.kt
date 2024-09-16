@@ -1,4 +1,4 @@
-package adapter
+package com.example.hantey.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -13,11 +13,11 @@ class MenuAdapter(
     private val menuItemsName: List<String>,
     private val menuItemPrice: List<String>,
     private val menuImage: List<Int>,private val requireContext:Context ) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
-private val itemCLickListener: OnClickListener ?=null
+private val itemCLickListener: OnClickListener?=null
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
-      val binding = MenuItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding = MenuItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return MenuViewHolder(binding)
     }
 

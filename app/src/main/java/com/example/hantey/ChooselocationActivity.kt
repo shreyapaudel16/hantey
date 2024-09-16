@@ -1,5 +1,6 @@
 package com.example.hantey
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -16,10 +17,15 @@ class ChooselocationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
+
         val locationList= arrayOf("Kathmandu","Lalitpur","Bhaktapur","Anamnagar","Kaski","chitwan","Butwal","Pokhara","Dharan")
         val adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,locationList)
         val autoCompleteTextView=binding.ListOfLocation
         autoCompleteTextView.setAdapter(adapter)
+        binding.nextbutton.setOnClickListener {
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

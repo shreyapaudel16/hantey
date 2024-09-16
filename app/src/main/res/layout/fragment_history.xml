@@ -77,16 +77,35 @@
                     app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodName" />
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:id="@+id/cardView5"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
                     android:layout_marginStart="65dp"
+                    android:layout_marginTop="8dp"
                     android:background="#74DE78"
                     app:cardBackgroundColor="#93E096"
                     app:cardCornerRadius="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/recievedbutton"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/buyAgainFoodName"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.178" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/recievedbutton"
+                    android:layout_width="68dp"
+                    android:layout_height="23dp"
+                    android:background="@drawable/addtocartshape"
+                    android:fontFamily="@font/poppins"
+                    android:text="Recieved"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/cardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

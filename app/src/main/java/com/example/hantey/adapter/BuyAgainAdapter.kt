@@ -1,4 +1,4 @@
-package adapter
+package com.example.hantey.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

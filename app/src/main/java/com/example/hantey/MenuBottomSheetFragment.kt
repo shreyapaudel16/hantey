@@ -1,7 +1,7 @@
 package com.example.hantey
 
 
-import adapter.MenuAdapter
+import com.example.hantey.adapter.MenuAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

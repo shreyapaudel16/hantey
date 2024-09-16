@@ -1,32 +1,14 @@
 {
   "project_info": {
-    "project_number": "1016463983516",
-    "project_id": "hanteyyuser",
-    "storage_bucket": "hanteyyuser.appspot.com"
+    "project_number": "876276297065",
+    "firebase_url": "https://hanteyy-17b9f-default-rtdb.firebaseio.com",
+    "project_id": "hanteyy-17b9f",
+    "storage_bucket": "hanteyy-17b9f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1016463983516:android:781b6055731c2d9c5efe59",
-        "android_client_info": {
-          "package_name": "com.example.adminhantey"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDO_KnWnbDK4fQls1N3wWMW8WU0I0f4gSs"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1016463983516:android:3cef86e1e4b0e7c55efe59",
+        "mobilesdk_app_id": "1:876276297065:android:7bd152b2fe0cf434b4a1f8",
         "android_client_info": {
           "package_name": "com.example.hantey"
         }
@@ -34,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDO_KnWnbDK4fQls1N3wWMW8WU0I0f4gSs"
+          "current_key": "AIzaSyDoK4biaBeqXpWBrrCBT4mH2WxF61HOz4A"
         }
       ],
       "services": {

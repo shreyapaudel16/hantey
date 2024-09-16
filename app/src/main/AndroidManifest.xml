@@ -13,27 +13,8 @@
         android:theme="@style/Theme.Hantey"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PayOutaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChooselocationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".hantey_screen"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,6 +22,29 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name=".ChooselocationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayOutaActivity"
+            android:exported="false" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

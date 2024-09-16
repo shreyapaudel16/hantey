@@ -1,6 +1,6 @@
 package com.example.hantey.Fragment
 
-import adapter.Popularadapter
+import com.example.hantey.adapter.Popularadapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

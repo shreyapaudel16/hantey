@@ -1,4 +1,4 @@
-package adapter
+package com.example.hantey.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,6 +1,6 @@
 package com.example.hantey.Fragment
 
-import adapter.CartAdapter
+import com.example.hantey.adapter.CartAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
